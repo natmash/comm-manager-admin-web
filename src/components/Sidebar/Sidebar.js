@@ -29,18 +29,18 @@ class Sidebar extends Component {
               <Link to={'/events'} className="nav-link" activeClassName="active"><i className="icon-calendar"></i> Events <span className="badge badge-info">3</span></Link>
             </li>
             <li className={this.activeRoute("/mobile")}>
-              <a className="nav-link nav-dropdown-toggle" href="#" onClick={this.handleClick.bind(this)}><i className="icon-star"></i> Mobile</a>
+              <a className="nav-link nav-dropdown-toggle" href="#" onClick={this.handleClick.bind(this)}><i className="icon-screen-smartphone"></i> Mobile</a>
               <ul className="nav-dropdown-items">
                 <li className="nav-item">
-                  <Link to={'/icons/users'} className="nav-link" activeClassName="active"><i className="icon-star"></i> Users</Link>
+                  <Link to={'/icons/users'} className="nav-link" activeClassName="active"><i className="icon-user"></i> Users</Link>
                 </li>
                 <li className="nav-item">
-                  <Link to={'/icons/groups'} className="nav-link" activeClassName="active"><i className="icon-star"></i> Groups</Link>
+                  <Link to={'/icons/groups'} className="nav-link" activeClassName="active"><i className="icon-people"></i> Groups</Link>
                 </li>
               </ul>
             </li>
             <li className="nav-item">
-              <Link to={'/messages'} className="nav-link" activeClassName="active"><i className="icon-magic-wand"></i> Messages <span className="badge badge-info">5</span></Link>
+              <Link to={'/messages'} className="nav-link" activeClassName="active"><i className="fa-microphone"></i> Messages <span className="badge badge-info">5</span></Link>
             </li>
             <li className="nav-item">
               <Link to={'/attendance'} className="nav-link" activeClassName="active"><i className="icon-calendar"></i> Attendance </Link>
@@ -52,7 +52,7 @@ class Sidebar extends Component {
               <Link to={'/directory'} className="nav-link" activeClassName="active"><i className="icon-calendar"></i> Directory </Link>
             </li>
             <li className="nav-item">
-              <Link to={'/financial'} className="nav-link" activeClassName="active"><i className="icon-calendar"></i> Financial </Link>
+              <Link to={'/financial'} className="nav-link" activeClassName="active"><i className=""></i> Financial </Link>
             </li>
 
             <li className="nav-title">

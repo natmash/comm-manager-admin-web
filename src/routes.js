@@ -7,6 +7,11 @@ import Simple from './containers/Simple/'
 
 import Charts from './views/Charts/'
 import Dashboard from './views/Dashboard/'
+import Messages from './views/Messages/'
+import Users from './views/Users'
+import Groups from './views/Groups'
+import Events from './views/Events'
+
 import Buttons from './views/Components/Buttons/'
 import Cards from './views/Components/Cards/'
 import Forms from './views/Components/Forms/'
@@ -28,15 +33,15 @@ export default (
         <Route path="/" name="Home" component={Full}>
             <IndexRoute component={Dashboard}/>
             <Route path="dashboard" name="Dashboard" component={Dashboard}/>
-
+R
             {/*Our additions*/}
-            <Route path="events" name="Events" component={Dashboard}/>
+            <Route path="events" name="Events" component={Events}/>
             <Route path="mobile/" name="Mobile">
                 <IndexRoute component={FontAwesome}/>
-                <Route path="font-awesome" name="Users" component={FontAwesome}/>
-                <Route path="simple-line-icons" name="Groups" component={SimpleLineIcons}/>
+                <Route path="users" name="Users" component={Users}/>
+                <Route path="groups" name="Groups" component={Groups}/>
             </Route>
-            <Route path="messages" name="Messages" component={Dashboard}/>
+            <Route path="messages" name="Messages" component={Messages}/>
             <Route path="attendance" name="Attendance" component={Dashboard}/>
             <Route path="volunteers" name="Volunteers" component={Dashboard}/>
             <Route path="directory" name="Directory" component={Dashboard}/>

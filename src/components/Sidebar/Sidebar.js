@@ -18,7 +18,6 @@ class Sidebar extends Component {
 
   render() {
     return (
-
       <div className="sidebar">
         <nav className="sidebar-nav">
           <ul className="nav">
@@ -32,10 +31,10 @@ class Sidebar extends Component {
               <a className="nav-link nav-dropdown-toggle" href="#" onClick={this.handleClick.bind(this)}><i className="icon-screen-smartphone"></i> Mobile</a>
               <ul className="nav-dropdown-items">
                 <li className="nav-item">
-                  <Link to={'/icons/users'} className="nav-link" activeClassName="active"><i className="icon-user"></i> Users</Link>
+                  <Link to={'/mobile/users'} className="nav-link" activeClassName="active"><i className="icon-user"></i> Users</Link>
                 </li>
                 <li className="nav-item">
-                  <Link to={'/icons/groups'} className="nav-link" activeClassName="active"><i className="icon-people"></i> Groups</Link>
+                  <Link to={'/mobile/groups'} className="nav-link" activeClassName="active"><i className="icon-people"></i> Groups</Link>
                 </li>
               </ul>
             </li>
